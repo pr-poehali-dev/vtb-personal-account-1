@@ -124,20 +124,7 @@ const Index = () => {
             </Card>
 
             {/* Summary Cards */}
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-sm text-muted-foreground mb-1">Общая сумма</p>
-                      <p className="text-2xl font-bold">{formatCurrency(depositData.amount + depositData.totalAccrued)}</p>
-                    </div>
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                      <Icon name="Wallet" size={24} className="text-primary" />
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+            <div className="grid md:grid-cols-2 gap-6">
               
               <Card>
                 <CardContent className="p-6">
